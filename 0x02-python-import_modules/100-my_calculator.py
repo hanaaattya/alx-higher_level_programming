@@ -11,7 +11,7 @@ if __name__ == "__main__":
     if operator == '-':
         result = sub(a, b)
     elif operator == '+':
-        result = sum(a, b)
+        result = add(a, b)
     elif operator == '*':
         result = mul(a, b)
     elif operator == '/':
