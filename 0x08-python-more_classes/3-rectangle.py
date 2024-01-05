@@ -1,5 +1,5 @@
 #!/usr/bin/python3
---- define class rectangl4 ---
+--- np ---
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
@@ -30,3 +30,17 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        return 2 * (self.__width + self.__height) if self.__width != 0 and self.__height != 0 else 0
+
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
+
+    def __repr__(self):
+        return "Rectangle({}, {})".format(self.__width, self.__height)
