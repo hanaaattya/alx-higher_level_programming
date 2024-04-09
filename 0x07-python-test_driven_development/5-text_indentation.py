@@ -24,4 +24,4 @@ def text_indentation(text):
     print(modified_txt.strip())
 if __name__ == "__main__":
     import doctest
-    doctest.testfile("0-add_integer.txt")
+    doctest.testfile("tests/5-text_indentation.txt")
